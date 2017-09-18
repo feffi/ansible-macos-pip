@@ -1,0 +1,15 @@
+---
+- name: Install or update pip
+  become: true
+  easy_install:
+    name: pip
+    state: latest
+  when: pip.packages
+
+- name: Install packages
+  become: true
+  pip:
+    name: "{{ item }}"
+    state: latest
+  with_items: pip.packages
+  when: pip.packages
