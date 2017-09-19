@@ -3,9 +3,9 @@
   connection: local
   vars:
     DEBUG: true
-    pip:
+    macos_pip:
       packages: [
         "pypcap"
       ]
   roles:
-    - { role: ansible-pip }
+    - { role: ansible-macos-pip }

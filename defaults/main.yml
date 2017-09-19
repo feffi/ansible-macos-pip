@@ -1,4 +1,4 @@
 ---
-pip:
+macos_pip:
   # Packages to install via python pip
   packages: []

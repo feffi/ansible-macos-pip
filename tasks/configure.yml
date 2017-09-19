@@ -2,14 +2,16 @@
 - name: Install or update pip
   become: true
   easy_install:
-    name: pip
+    name: "{{ item }}"
     state: latest
-  when: pip.packages
+  with_items:
+    - "pip"
+  when: macos_pip.packages
 
 - name: Install packages
   become: true
   pip:
     name: "{{ item }}"
     state: latest
-  with_items: pip.packages
-  when: pip.packages
+  with_items: macos_pip.packages
+  when: macos_pip.packages
