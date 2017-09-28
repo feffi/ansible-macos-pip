@@ -21,6 +21,8 @@ dependencies:
         packages: [
           { name: "python" }
         ],
-        taps: []
+        taps: [],
+        casks: [],
+        brews: []
       }
     }
