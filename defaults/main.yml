@@ -1,4 +1,4 @@
 ---
-macos_pip:
+ansible_pip:
   # Packages to install via python pip
   packages: []

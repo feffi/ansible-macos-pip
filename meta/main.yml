@@ -10,19 +10,7 @@ galaxy_info:
         - all
   galaxy_tags:
     - system
-    - osx
-    - macos
     - config
     - python
     - pip
-dependencies:
-  - { role: feffi.macos-homebrew,
-      macos_homebrew: {
-        packages: [
-          { name: "python" }
-        ],
-        taps: [],
-        casks: [],
-        brews: []
-      }
-    }
+dependencies: []

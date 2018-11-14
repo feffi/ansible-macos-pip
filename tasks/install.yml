@@ -6,12 +6,12 @@
     state: latest
   with_items:
     - "pip"
-  when: macos_pip.packages
+  when: ansible_pip.packages
 
 - name: Install packages
   become: true
   pip:
     name: "{{ item }}"
     state: latest
-  with_items: "{{ macos_pip.packages }}"
-  when: macos_pip.packages
+  with_items: "{{ ansible_pip.packages }}"
+  when: ansible_pip.packages
